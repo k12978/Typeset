@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./typeset.css" />
+    <style>
+      body {
+        max-width: 65vw;
+        margin-left: auto; margin-right: auto;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header p {
+        text-align: left;
+      }
+
+      main {
+        width: 100%;
+        display: flex;
+        box-sizing: content-box;
+      }
+
+      section {
+        min-width: 30%; max-width: 30%;
+        padding: 3%;
+      }
+
+      .show {
+        margin-top: 0;
+      }
+
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Typeset</h1>
+        <article>
+          <p>
+            Typeset is an up-to-date and open-source CSS typeset for article-type content which aims to improve upon the default browser renderings of common HTML elements.
+            It was written specifically to easily integrate into a codebase without much configuration needed beyond theming (e.g. colors or font).
+          </p>
+          <p>
+            Below is a full exemplification of Typeset's classless CSS;
+          </p>
+        </article>
+    </header>
+    <h2 style="text-align: center;">Text</h2>
+      <hr />
+    <main>
+      <section>
+        <h4 class="show">List Text</h4>
+          <ul>
+            <li>Unordered list item</li>
+            <ul>
+              <li>Nested unordered list item </li>
+              <ul>
+                <li>Nested-nested unordered list item </li>
+              </ul>
+            </ul>
+          </ul>
+          <ol>
+            <li>Ordered list item</li>
+            <ol>
+              <li>Nested ordered list item</li>
+              <ol>
+                <li>Nested-nested ordered list item</li>
+              </ol>
+            </ol>
+          </ol>
+          <dl>
+            <dt>Item to be described</dt>
+            <dd>
+              Item Description
+            </dd>
+          </dl>
+      </section>
+      <section>
+        <h4 class="show">Heading Text</h4>
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+      </section>
+      <section>
+        <h4 class="show">Basic Text</h4>
+          <p style="white-space: pre-line;">Paragraph
+          <span>Span</span>
+          <strong>Strong</strong>
+          <small>Small</small>
+          <ins>Insert</ins>
+          <a href="/">Anchor</a>
+          <em>Emphasis</em>
+          <span><sup>Super</sup>script</span>
+          <kbd>Keyboard</kbd>
+          <samp>Sample</samp>
+          <ruby>Ruby<rt>Annotation</rt></ruby>
+          <mark>Highlight</mark>
+          <var>Variable</var>
+          <code>Code</code>
+          <abbr>Abbreviation</abbr>
+          <del>Delete</del>
+          <span><sub>Sub</sub>script</span>
+          <u>Underline</u>
+        </p>
+      </section>
+    </main>
+    <br />
+    <h2 style="text-align: center;">Figure-like HTML Elements</h2>
+      <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>Table Header 1</th>
+          <th>Table Header 2</th>
+          <th>Table Header 3</th>
+          <th>Table Header 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table row 1-1</td>
+          <td>Table row 1-2</td>
+          <td>Table row 1-3</td>
+          <td>Table row 1-4</td>
+        </tr>
+        <tr>
+          <td>Table row 2-1</td>
+          <td>Table row 2-2</td>
+          <td>Table row 2-3</td>
+          <td>Table row 2-4</td>
+        </tr>
+        <tr>
+          <td>Table row 3-1</td>
+          <td>Table row 3-2</td>
+          <td>Table row 3-3</td>
+          <td>Table row 3-4</td>
+        </tr>
+        <tr>
+          <td>Table row 4-1</td>
+          <td>Table row 4-2</td>
+          <td>Table row 4-3</td>
+          <td>Table row 4-4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Table Footer 1</td>
+          <td>Table Footer 2</td>
+          <td>Table Footer 3</td>
+          <td>Table Footer 4</td>
+        </tr>
+      </tfoot>
+    </table>
+    <pre>
+      Hello,
+
+        This if formatted text inside the HTML pre tag
+        styled with the Typeset pure classless CSS typeset.
+
+      Check it out @ https://github.com/kikoooooooo/Typeset
+
+                                                    - Kiko :^)
+    </pre>
+    <iframe src="example.html" title="Typeset iframe example"></iframe>
+    <br />
+    <hr />
+    <footer>
+      <p><em>Web-page</em> copyright of Kiko - 
+      <br /><em>Typeset</em> is licensed with the <a href="https://github.com/kikoooooooo/typeset/blob/main/LICENSE" target="_blank" rel="noreferrer">GNUGPL3</a>.</p>
+      <p><a href="https://www.w3schools.com/tags/" target="_blank" rel="noreferrer">Click here</a> to read about any HTML tags you didn't recognize in the exemplification.</p>
+    </footer>
+  </body>
+</html>

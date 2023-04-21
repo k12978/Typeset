@@ -1,3 +1,10 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading Text */
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
@@ -32,13 +39,72 @@ h6 {
   line-height: 1.7;
 }
 
-p, span, code, em, b, ul, ul li, table, table tbody {
-  margin-bottom: 1rem;
+/* Basic Text */
+
+p,
+span,
+code,
+em,
+u,
+strong,
+mark,
+b,
+a,
+del,
+s,
+ins,
+ruby,
+abbr,
+ul,
+ul li,
+ol,
+ol li,
+dl,
+dl dt,
+dl dd,
+table,
+table thead,
+table tbody,
+table tfoot {
   font-size: 1.2rem;
 }
 
-code, pre {
-  font-weight: bold;
+mark {
+  padding: 0.05rem 0.1rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+small {
+  opacity: 0.75;
+}
+
+rt {
+  font-size: 65%;
+  line-height: 1.5;
+}
+
+figcaption, caption {
+  max-width: 40rem;
+  margin: 1rem;
+  text-align: left;
+  font-style: italic;
+  font-size: medium;
+}
+
+sub, sup {
+  line-height: 0;
+}
+
+code, kbd, pre, var, samp {
   font-family: ui-monospace,
   SFMono-Regular,
   SF Mono,
@@ -46,14 +112,113 @@ code, pre {
   Consolas,
   Liberation Mono,
   monospace;
+  font-size: 85%;
+  font-style: normal;
 }
 
-a {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+code, kbd {
+  padding: .2rem .4rem;
+  margin: 0;
+  white-space: break-spaces;
+  background-color: rgba(120, 124, 129, 0.4);
+  border-radius: 6px;
+}
+
+/* List Text */
+
+ul, ol {
+  margin: 0 0 1.5rem 0;
+  padding: 0 0 0 1.5rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0 0 0.5rem 1.5rem;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+ol ol li {
+  list-style-type: lower-latin;
+}
+
+ol ol ol li {
+  list-style-type: lower-roman;
+}
+
+dl {
+  margin: 0 0 1.5rem 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+}
+
+dt:before {
+  content: "– ";
+}
+
+dd:before {
+  content: "• ";
+}
+
+/* Figure-like HTML elements */
+
+table, pre, iframe {
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+table, iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 2px solid;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(120, 124, 129, 0.4);
+}
+
+thead th {
+  vertical-align: bottom;
+}
+
+pre {
+  padding: 2rem;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: rgba(120, 124, 129, 0.4);
+  border-radius: 6px;
+}
+
+iframe {
+  height: 40rem;
+  border: 2px solid;
 }
 
 @media (max-width: 768px) {
+  
+  /* Header Text */
+
   h1 {
     font-size: 2rem;
   }

@@ -1,15 +1,16 @@
 /*
-            TYPESET 1.0.1
+            TYPESET 1.1.0
 https://github.com/kikoooooooo/typeset
 */
 
 body {
+  font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.5rem;
+  padding-top: 1em; padding-bottom: 1em;
 }
 
 h1 {
@@ -23,40 +24,23 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: .7rem;
   line-height: 1.7;
-}
-
-p,
-a,
-ul,
-ul li,
-ol,
-ol li,
-dl,
-dl dt,
-dl dd,
-table,
-table thead,
-table tbody,
-table tfoot,
-blockquote {
-  font-size: 1.2rem;
 }
 
 mark {
@@ -114,7 +98,7 @@ code, kbd, pre, var, samp {
   font-style: normal;
 }
 
-code, kbd {
+code, kbd, pre, samp {
   padding: .2rem .4rem;
   margin: 0;
   white-space: break-spaces;
@@ -123,15 +107,15 @@ code, kbd {
 }
 
 ul, ol {
-  margin: 0 0 1.5rem 0;
-  padding: 0 0 0 1.5rem;
+  margin: 0 0 1.5em 0;
+  padding: 0 0 0 1.5em;
 }
 
 ul ul,
 ol ol,
 ul ol,
 ol ul {
-  margin: 0 0 0.5rem 1.5rem;
+  margin: 0 0 0.5em 1.5em;
   padding: 0;
 }
 
@@ -148,7 +132,7 @@ ol ol ol li {
 }
 
 dl {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.5em 0;
 }
 
 dt {
@@ -156,7 +140,7 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 
 dt:before {
@@ -168,11 +152,10 @@ dd:before {
 }
 
 table, pre, iframe {
-  margin: 2.5rem 0 2.5rem 0;
+  margin: 2.5em 0 2.5em 0;
 }
 
 table, iframe {
-  width: 100%;
   max-width: 100%;
 }
 
@@ -218,25 +201,4 @@ blockquote {
 
 blockquote::before, blockquote::after {
   content: '"';
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 1.25rem;
-  }
-  h5 {
-    font-size: 1rem;
-  }
-  h6 {
-    font-size: 0.875rem;
-  }
 }

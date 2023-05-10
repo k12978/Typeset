@@ -1,204 +1,224 @@
 /*
-            TYPESET 1.1.0
+            TYPESET 1.2.2
 https://github.com/kikoooooooo/typeset
 */
 
-body {
-  font-size: 1.2rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Global Typesetting */
 
-h1, h2, h3, h4, h5, h6 {
-  padding-top: 1em; padding-bottom: 1em;
-}
+  body {
+    font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-}
+  table, pre, iframe {
+    width: 100%;
+    margin: 2.5em 0 1.5em 0;
+  }
 
-h2 {
-  font-size: 2rem;
-  line-height: 1.3;
-}
+/* Headings */
 
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.4;
-}
+  h1, h2, h3, h4, h5, h6 {
+    padding-top: 1em; padding-bottom: 1em;
+  }
 
-h4 {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
 
-h5 {
-  font-size: 1rem;
-  line-height: 1.6;
-}
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
 
-h6 {
-  font-size: .7rem;
-  line-height: 1.7;
-}
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
 
-mark {
-  padding: 0.05rem 0.1rem;
-}
+  h4 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
+  h5 {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  h6 {
+    font-size: .7rem;
+    line-height: 1.7;
+  }
 
-abbr {
-  text-decoration: underline dotted;
-  cursor: help;
-}
+/* Inline Elements */
 
-small {
-  opacity: 0.75;
-}
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+  }
 
-ins {
-  text-decoration: underline;
-}
+    @media (prefers-reduced-motion) {
+      a {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+      }
+    }
 
-rt {
-  font-size: 65%;
-  line-height: 1.5;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-figcaption, caption {
-  max-width: 40rem;
-  margin: 1rem;
-  text-align: left;
-  font-style: italic;
-  font-size: medium;
-}
+  mark {
+    background-color: gold;
+    padding: 0.05rem 0.1rem;
+  }
 
-sub, sup {
-  line-height: 0;
-}
+  abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+  }
 
-code, kbd, pre, var, samp {
-  font-family: ui-monospace,
-  SFMono-Regular,
-  SF Mono,
-  Menlo,
-  Consolas,
-  Liberation Mono,
-  monospace;
-  font-size: 85%;
-  font-style: normal;
-}
+  small {
+    opacity: 0.75;
+  }
 
-code, kbd, pre, samp {
-  padding: .2rem .4rem;
-  margin: 0;
-  white-space: break-spaces;
-  background-color: rgba(120, 124, 129, 0.4);
-  border-radius: 6px;
-}
+  ins {
+    text-decoration: underline;
+  }
 
-ul, ol {
-  margin: 0 0 1.5em 0;
-  padding: 0 0 0 1.5em;
-}
+  rt {
+    font-size: 65%;
+    line-height: 1.5;
+  }
 
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-  margin: 0 0 0.5em 1.5em;
-  padding: 0;
-}
+  figcaption, caption {
+    max-width: 40rem;
+    margin: 1rem;
+    text-align: left;
+    font-style: italic;
+    font-size: medium;
+  }
 
-li {
-  margin-bottom: 0.5rem;
-}
+  sub, sup {
+    line-height: 0;
+  }
 
-ol ol li {
-  list-style-type: lower-latin;
-}
+/* Code & Math Elements */
 
-ol ol ol li {
-  list-style-type: lower-roman;
-}
+  code, kbd, pre, var, samp {
+    font-family: ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;
+    font-size: 85%;
+    font-style: normal;
+  }
 
-dl {
-  margin: 0 0 1.5em 0;
-}
+  code, kbd, pre, samp {
+    padding: .2rem .4rem;
+    margin: 0;
+    white-space: break-spaces;
+    background-color: rgba(120, 124, 129, 0.4);
+    border-radius: 6px;
+  }
 
-dt {
-  font-weight: bold;
-}
+  pre {
+    padding: 2rem;
+    overflow: auto;
+    line-height: 1.45;
+    background-color: rgba(120, 124, 129, 0.4);
+    border-radius: 6px;
+  }
 
-dd {
-  margin-bottom: 0.5em;
-}
+/* List Elements */
 
-dt:before {
-  content: "– ";
-}
+  ul, ol, dl {
+    margin: 2.5em 0 1.5em 0;
+    padding: 0 0 0 1.5em;
+  }
 
-dd:before {
-  content: "• ";
-}
+    li {
+      margin-bottom: 0.5rem;
+    }
 
-table, pre, iframe {
-  margin: 2.5em 0 2.5em 0;
-}
+    ul ul,
+    ol ol,
+    ul ol,
+    ol ul,
+    dl dd {
+      margin: 0 0 0.5em 1.5em;
+      padding: 0;
+    }
 
-table, iframe {
-  max-width: 100%;
-}
+    ol ol li {
+      list-style-type: lower-latin;
+    }
 
-table {
-  background-color: transparent;
-  border-collapse: collapse;
-}
+    ol ol ol li {
+      list-style-type: lower-roman;
+    }
 
-th,
-td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border: 2px solid;
-}
+    dl dt {
+      font-weight: bold;
+    }
 
-tr:nth-child(even) {
-  background-color: rgba(120, 124, 129, 0.4);
-}
+      dl dt:before {
+        content: "• ";
+      }
 
-thead th {
-  vertical-align: bottom;
-}
+      dl dd:before {
+        content: "– ";
+      }
 
-pre {
-  padding: 2rem;
-  overflow: auto;
-  line-height: 1.45;
-  background-color: rgba(120, 124, 129, 0.4);
-  border-radius: 6px;
-}
+/* Table Elements */
 
-iframe {
-  height: 40rem;
-  border: 2px solid;
-}
+  table {
+    background-color: transparent;
+    border-collapse: collapse;
+  }
 
-blockquote {
-  margin: 1em 0;
-  padding: 1em;
-  border-left: 3px solid #ccc;
-  font-style: italic;
-}
+    th,
+    td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border: 2px solid;
+    }
 
-blockquote::before, blockquote::after {
-  content: '"';
-}
+    tr:nth-child(even) {
+      background-color: rgba(120, 124, 129, 0.4);
+    }
+
+    thead th {
+      vertical-align: bottom;
+    }
+
+/* Other Elements  */
+
+  iframe {
+    height: 40rem;
+    border: 2px solid;
+  }
+
+  blockquote {
+    margin: 1em 0;
+    padding: 1em;
+    border-left: 3px solid #ccc;
+    font-style: italic;
+  }
+
+    blockquote::before, blockquote::after {
+      content: '"';
+    }

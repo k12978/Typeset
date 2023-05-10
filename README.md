@@ -10,4 +10,4 @@ Also; open `example.html` or visit [my website](https://kikoi.site) for a live e
 
 ## Specification
 
-Typeset's styles are written while referencing [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) and [W3](https://www.w3schools.com/tags/default.asp) with the actual *usage* of the element in mind. Beyond referencing documentation, I seek actual usage of the elements in the web to reference.
+Typeset utilizes classless CSS and is formatted per the recommendations of [CSS Guidelines v2.2.5](https://cssguidelin.es/). Typeset's styles are written while referencing [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) and [W3](https://www.w3schools.com/tags/default.asp) with the actual *usage* of the element in mind. Beyond referencing documentation, I seek actual usage of the elements in the web to reference.

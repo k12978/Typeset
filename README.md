@@ -4,9 +4,23 @@ Typeset is an up-to-date and open-source CSS typeset for article-type content wh
 
 ## Usage
 
-Get a copy of `typeset.css` via your preferred method (consider using git if you want updated versions of Typeset streamlined to you) and integrate the file or even just it's contents into your codebase while overwriting defaults to suit your usage.
+Get a copy of `typeset.css` via your preferred method and integrate the file or even just it's contents into your codebase while overwriting defaults to suit your usage.
 
 Also; open `example.html` or visit [my website](https://kikoi.site) for a live example of the typeset properly used.
+
+### I Just Need A Typeset
+
+Include the code below as CSS or HTML according to your use case.
+
+```css
+@import url(https://cdn.jsdelivr.net/gh/k12978/Typeset@main/typeset.css);
+```
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.css" type="text/css" />
+```
+
+Using this method is the fastest and easiest way to implement Typeset but you cannot edit the typeset directly but you can still overwrite it using classed CSS or `!important` keyword.
 
 ## Specification
 

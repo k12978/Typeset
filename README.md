@@ -2,6 +2,14 @@
 
 Typeset is an up-to-date and open-source CSS typeset for article-type content which aims to improve upon the default browser renderings of common HTML elements. It was written specifically to easily integrate into a codebase without much configuration needed beyond theming (e.g. colors or font).
 
+*Before:*
+
+![Before adding Typeset to website](https://github.com/k12978/Typeset/blob/main/images/before.png?raw=true)
+
+*After:*
+
+![After adding Typeset to website](https://github.com/k12978/Typeset/blob/main/images/after.png?raw=true)
+
 ## Usage
 
 Get a copy of `typeset.css` via your preferred method and integrate the file or even just it's contents into your codebase while overwriting defaults to suit your usage.
